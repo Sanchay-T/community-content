@@ -2523,3 +2523,62 @@ Try it now: [Launch the live demo](https://frontend-iota-five-12.vercel.app) and
   alt="Voice-first medical intake UI"
   caption="Voice-first intake screen with animated start button and real-time transcript."
  />
+
+## Final Knowledge Check
+
+Test your understanding of the key concepts covered in this tutorial:
+
+<Quiz
+  questions={[
+    {
+      question: "What is the maximum queue size used for backpressure control in the audio_out_queue?",
+      options: ["3", "5", "10", "Unlimited"],
+      answer: 1
+    },
+    {
+      question: "Which Gemini model is used for both live audio streaming and structured data extraction?",
+      options: ["gemini-2.0-flash-exp", "gemini-2.5-flash-native-audio-preview-09-2025", "gemini-1.5-pro", "gpt-4-turbo"],
+      answer: 1
+    },
+    {
+      question: "What audio sample rate does Gemini Live API expect for input?",
+      options: ["8 kHz", "16 kHz", "24 kHz", "48 kHz"],
+      answer: 1
+    },
+    {
+      question: "How many concurrent async tasks handle the bidirectional streaming?",
+      options: ["2", "3", "4", "5"],
+      answer: 2
+    },
+    {
+      question: "What function does Gemini call to trigger the final structured data extraction?",
+      options: ["extract_data()", "complete_intake()", "finish_session()", "save_medical_data()"],
+      answer: 1
+    },
+    {
+      question: "What is the measured p50 latency for first audio response?",
+      options: ["150ms", "320ms", "500ms", "800ms"],
+      answer: 1
+    },
+    {
+      question: "Which Python framework is used for the backend server?",
+      options: ["Django", "Flask", "FastAPI", "Tornado"],
+      answer: 2
+    },
+    {
+      question: "What is the schema compliance rate achieved in production testing?",
+      options: ["95.2%", "97.8%", "98.5%", "99.1%"],
+      answer: 2
+    },
+    {
+      question: "What happens when the audio_in_queue is drained during an interruption?",
+      options: ["The session restarts", "Queued audio chunks are discarded", "The connection closes", "Audio is saved for later"],
+      answer: 1
+    },
+    {
+      question: "Which voice model is used as the default for AI responses?",
+      options: ["Charon", "Puck", "Kore", "Aoede"],
+      answer: 1
+    }
+  ]}
+/>
